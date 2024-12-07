@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { within, userEvent, expect } from '@storybook/test';
 
 import App from '../App';
 
@@ -18,6 +17,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const main: Story = {};
+export const Main: Story = {};
 
 
