@@ -1,46 +1,41 @@
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 1px solid olive;
-        border-radius: 15px;
-        width: 325px;
-        img {
-            width: 200px;
-            height: 150px;
-            border: 1px solid white;
-            border-radius: inherit;
-            object-fit: cover;
-        }
-        
-        dl {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            width: 95%;
-            max-width: 225px;
-            margin: 15px 0 0;
-            
-            & > * {
-                border: .1px solid hsl(0, 0%, 25%);
-            }
-            
-            dt {
-                text-transform: capitalize;
-                text-align: right;
-                &::after {
-                    content: ':';
-                    margin-right: 10px;
-                }
-            }
-            
-            dd {
-                text-align: center;
-            }
-        }
-    }    
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid olive;
+  border-radius: 15px;
+  width: 325px;
+  padding: 20px 10px;
+  img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: inherit;
+    object-fit: cover;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    width: 95%;
+    max-width: 225px;
+    margin: 15px 0 0;
+
+    & > * {
+      border: 0.1px solid hsl(0, 0%, 25%);
+    }
+
+    dt {
+      text-transform: capitalize;
+      text-align: right;
+      &::after {
+        content: ":";
+        margin-right: 10px;
+      }
+    }
+
+    dd {
+      text-align: center;
+    }
+  }
 }

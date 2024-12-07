@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import './App.scss'
 import Home from './pages/Home';
 import Order from './pages/Order';
 import Matches from './pages/Matches';
@@ -12,7 +11,6 @@ const shoeImageUrls: string[] = [
   "https://cdn.khadims.com/image/tr:e-sharpen-01,h-822,w-940,cm-pad_resize/data/khadims/06-apr-2022/35923835930_4.jpg",
   "https://i.redd.it/v3jqhi6ew0b71.jpg"
 ];
-
 
 const getList = async () => {
   try {

@@ -8,7 +8,7 @@ interface Shoe {
 
 function Card(props: { shoes: Shoe[] }) {
     return (
-        <div className="cards">
+        <div className="flex flex-wrap gap-3 justify-center">
             {props.shoes.map((shoe: Shoe, index) => (
                 <div className="card" key={index}>
                     <img src={shoe.image} />
