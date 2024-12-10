@@ -1,25 +1,23 @@
 // import { useState, useEffect } from 'react'
-import './Card.scss'
+import "./Card.scss";
 
-interface Shoe {
-    type: string;
-    image: string;
+interface Item {
+  type: string;
+  image: string;
+  id: string;
 }
 
-function Card(props: { shoes: Shoe[] }) {
-    return (
-        <div className="flex flex-wrap gap-3 justify-center">
-            {props.shoes.map((shoe: Shoe, index) => (
-                <div className="card" key={index}>
-                    <img src={shoe.image} />
-                    <dl>
-                        {(Object.keys(shoe) as Array<keyof Shoe>).map((key) => key != 'image' ? <><dt>{key}</dt> <dd>{shoe[key]}</dd></> : <></>)}
-                    </dl>
-                </div>
-            ))}
-        </div>
-    );
-
+function Card({ item }: { item: Item }) {
+  return (
+    <div className="card">
+      <img src={item.image} />
+      <dl>
+        {(Object.keys(item) as Array<keyof Item>).map((key_name, index) =>
+            key_name !== "image" && (<div key={index}><dt>{key_name}</dt> <dd>{item[key_name]}</dd></div>)
+        )}
+      </dl>
+    </div>
+  );
 }
 
-export default Card
+export default Card;

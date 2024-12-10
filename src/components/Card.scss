@@ -8,34 +8,36 @@
   padding: 20px 10px;
   img {
     width: 200px;
-    height: 150px;
+    height: 175px;
     border: 1px solid white;
     border-radius: inherit;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   dl {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    width: 95%;
-    max-width: 225px;
-    margin: 15px 0 0;
+    margin-top: 15px;
+    & > div {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      width: 95%;
+      max-width: 225px;
 
-    & > * {
-      border: 0.1px solid hsl(0, 0%, 25%);
-    }
-
-    dt {
-      text-transform: capitalize;
-      text-align: right;
-      &::after {
-        content: ":";
-        margin-right: 10px;
+      > * {
+        border: 0.1px solid hsl(0, 0%, 25%);
       }
-    }
 
-    dd {
-      text-align: center;
+      dt {
+        text-transform: capitalize;
+        text-align: right;
+        &::after {
+          content: ":";
+          margin-right: 10px;
+        }
+      }
+
+      dd {
+        text-align: center;
+      }
     }
   }
 }

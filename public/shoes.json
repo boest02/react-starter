@@ -1,5 +1,6 @@
 [
     {
+        "id": "00001",
         "type": "sneaker",
         "foot": "left",
         "size": "9",
@@ -8,9 +9,10 @@
         "brand": "Adidas",
         "material": "mesh",
         "closure": "laces",
-        "image": ""
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D"
     },
     {
+        "id": "00002",
         "type": "boot",
         "foot": "right",
         "size": "8.5",
@@ -19,9 +21,10 @@
         "brand": "Timberland",
         "material": "leather",
         "closure": "lace",
-        "image": ""
+        "image": "https://cdn11.bigcommerce.com/s-s62r70/images/stencil/1280x1280/products/3540/7982/Timberland-Pro-38021242-Direct-Attach-6-Inch-Steel-Toe-Boot-Brown-Oiled__62381.1556814052.jpg?c=2"
     },
     {
+        "id": "00003",
         "type": "slipper",
         "foot": "left",
         "size": "7",
@@ -30,9 +33,10 @@
         "brand": "UGG",
         "material": "suede",
         "closure": "slip-on",
-        "image": ""
+        "image": "https://comfortme.com.au/cdn/shop/products/UGG-Fur-Trim-Genuine-Scuffs_-Slippers_-Slides_-Australian-Made_-Sheepskin_-Comfort-Me_Grey_CMUGWOMBGRY-2_800x.jpg?v=1678182946"
     },
     {
+        "id": "00004",
         "type": "sandal",
         "foot": "right",
         "size": "6.5",
@@ -44,6 +48,7 @@
         "image": ""
     },
     {
+        "id": "00005",
         "type": "shoe",
         "foot": "left",
         "size": "10",
@@ -55,6 +60,7 @@
         "image": ""
     },
     {
+        "id": "00006",
         "type": "heels",
         "foot": "right",
         "size": "8",
@@ -63,9 +69,10 @@
         "brand": "Christian Louboutin",
         "material": "leather",
         "closure": "buckle",
-        "image": ""
+        "image": "https://cdn.pixabay.com/photo/2024/06/01/18/18/shoe-8802894_640.png"
     },
     {
+        "id": "00007",
         "type": "sneaker",
         "foot": "left",
         "size": "11",
@@ -77,6 +84,7 @@
         "image": ""
     },
     {
+        "id": "00008",
         "type": "boot",
         "foot": "right",
         "size": "9.5",
@@ -88,6 +96,7 @@
         "image": ""
     },
     {
+        "id": "00009",
         "type": "shoe",
         "foot": "left",
         "size": "8",
@@ -99,6 +108,7 @@
         "image": ""
     },
     {
+        "id": "00010",
         "type": "sandal",
         "foot": "right",
         "size": "7.5",
@@ -110,6 +120,7 @@
         "image": ""
     },
     {
+        "id": "00011",
         "type": "slipper",
         "foot": "left",
         "size": "9",
@@ -121,6 +132,7 @@
         "image": ""
     },
     {
+        "id": "00012",
         "type": "heels",
         "foot": "right",
         "size": "6.5",
@@ -132,6 +144,7 @@
         "image": ""
     },
     {
+        "id": "00013",
         "type": "boot",
         "foot": "left",
         "size": "10",
@@ -143,6 +156,7 @@
         "image": ""
     },
     {
+        "id": "00014",
         "type": "sneaker",
         "foot": "right",
         "size": "8.5",
@@ -154,6 +168,7 @@
         "image": ""
     },
     {
+        "id": "00015",
         "type": "shoe",
         "foot": "left",
         "size": "7",
@@ -165,6 +180,7 @@
         "image": ""
     },
     {
+        "id": "00016",
         "type": "sandal",
         "foot": "right",
         "size": "9.5",
@@ -176,6 +192,7 @@
         "image": ""
     },
     {
+        "id": "00017",
         "type": "slipper",
         "foot": "left",
         "size": "8",
@@ -187,6 +204,7 @@
         "image": ""
     },
     {
+        "id": "00018",
         "type": "boot",
         "foot": "right",
         "size": "10.5",
@@ -198,6 +216,7 @@
         "image": ""
     },
     {
+        "id": "00019",
         "type": "sneaker",
         "foot": "left",
         "size": "9",
@@ -209,6 +228,7 @@
         "image": ""
     },
     {
+        "id": "00020",
         "type": "shoe",
         "foot": "right",
         "size": "8.5",
@@ -220,6 +240,7 @@
         "image": ""
     },
     {
+        "id": "00021",
         "type": "heels",
         "foot": "left",
         "size": "7",
@@ -231,6 +252,7 @@
         "image": ""
     },
     {
+        "id": "00022",
         "type": "boot",
         "foot": "right",
         "size": "6.5",
@@ -242,6 +264,7 @@
         "image": ""
     },
     {
+        "id": "00023",
         "type": "sandal",
         "foot": "left",
         "size": "10",
@@ -253,6 +276,7 @@
         "image": ""
     },
     {
+        "id": "00024",
         "type": "slipper",
         "foot": "right",
         "size": "9.5",
@@ -264,6 +288,7 @@
         "image": ""
     },
     {
+        "id": "00025",
         "type": "sneaker",
         "foot": "left",
         "size": "8",
@@ -275,6 +300,7 @@
         "image": ""
     },
     {
+        "id": "00026",
         "type": "shoe",
         "foot": "right",
         "size": "7.5",
@@ -286,6 +312,7 @@
         "image": ""
     },
     {
+        "id": "00027",
         "type": "heels",
         "foot": "left",
         "size": "9",
@@ -297,6 +324,7 @@
         "image": ""
     },
     {
+        "id": "00028",
         "type": "boot",
         "foot": "right",
         "size": "8.5",
