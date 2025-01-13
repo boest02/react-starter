@@ -9,15 +9,23 @@ const shoeImageUrls: string[] = [
 
 export const useShoeList = () => {
   const [shoes, setShoes] = useState([]);
+  console.log("useShoeList");
 
   useEffect(() => {
     const getList = async () => {
-      const response = await fetch("http://localhost:5173/shoes.json", {
+      let data = [];
+      const response = await fetch("http://127.0.0.1:3000/api/shoes", {
         headers: {
             "Content-Type": "application/json",
         },
       });
-      const data = await response.json();
+      console.log(response);
+      try {
+        data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+      }
 
       // Add a random image to each shoe if empty
       data.forEach((element: { image: string }) => {

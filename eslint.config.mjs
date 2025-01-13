@@ -6,6 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import js from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";
+import pluginQuery from '@tanstack/eslint-plugin-query';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -25,6 +26,7 @@ export default [{
 )), {
     plugins: {
         "react-refresh": reactRefresh,
+        '@tanstack/query': pluginQuery,
     },
 
     languageOptions: {
@@ -39,5 +41,6 @@ export default [{
         "react-refresh/only-export-components": ["warn", {
             allowConstantExport: true,
         }],
+        '@tanstack/query/exhaustive-deps': 'error',
     },
 }];

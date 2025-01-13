@@ -1,10 +1,13 @@
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useShoeList } from "./components/getShoes";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useShoeList } from './components/getShoes';
+import Home from "./pages/Home";
+import Order from "./pages/Order";
+import Matches from "./pages/Matches";
+import { StrictMode } from "react";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-import Home from './pages/Home';
-import Order from './pages/Order';
-import Matches from './pages/Matches';
+const queryClient = new QueryClient();
 
 function App() {
 
@@ -15,15 +18,19 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home shoes={shoeList} />} />
-      <Route path="/order" element={<Order />} />
-      <Route path="/matches" element={<Matches />} />
-    </Routes>
-  </BrowserRouter>
+    <StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+      <Link to="/">Home</Link>
+        <Routes>
+          <Route path="/" element={<Home shoes={shoeList} />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/matches" element={<Matches />} />
+        </Routes>
+      </BrowserRouter>
+      </QueryClientProvider>
+    </StrictMode>
   );
-
 }
 
-export default App
+export default App;
