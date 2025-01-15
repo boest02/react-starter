@@ -8,19 +8,17 @@ const port = 3000;
 
 async function main() {
     console.log('Fetching shoes...');
-    const shoes = await prisma.footwear.findMany();
+    const shoes = await prisma.shoe.findMany();
     return shoes;
 };
 
-// Enable CORS for all origins
-app.use(cors());
-
 // Or, configure CORS for specific origins
 const corsOptions = {
-    origin: 'http://localhost:5174', // Replace with your frontend's origin
+    origin: 'http://localhost:5173', // Replace with your frontend's origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
 };
+
 app.use(cors(corsOptions));
 app.use(express.json());
 
@@ -43,7 +41,18 @@ app.get('/api/shoes', (req, res) => {
 
 app.post('/api/shoes/add', (req, res) => {
     console.log("POST request: ", req.body);
-    res.end('Received POST request');
+
+    let shoe = { data: req.body };
+    prisma.shoe.create(shoe)
+        .then(async () => {
+            await prisma.$disconnect();
+            res.end('Received POST request');
+        })
+        .catch(async (e) => {
+            console.error(e);
+            await prisma.$disconnect();
+            res.status(500).json(e);
+        });
 });
 
 app.listen(port, () => {

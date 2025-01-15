@@ -19,3 +19,17 @@ model footwear {
   closure  String?  @db.VarChar(50)
   image    String?  @db.Text
 }
+
+model Shoe {
+  id       Int      @id @default(autoincrement())
+  name     String   @db.VarChar(50)
+  type     String?  @db.VarChar(50)
+  foot     String?  @db.VarChar(10)
+  size     Decimal? @db.Decimal(3, 1)
+  width    String?  @db.VarChar(20)
+  color    String?  @db.VarChar(50)
+  brand    String?  @db.VarChar(50)
+  material String?  @db.VarChar(50)
+  closure  String?  @db.VarChar(50)
+  image    String?  @db.Text
+}
